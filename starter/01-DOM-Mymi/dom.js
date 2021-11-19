@@ -6,39 +6,39 @@ http://icant.co.uk/articles/domessentials/
 */
 
 /* 1. Cibler l'élément d'id nav */
-
+document.getElementById('nav');
 
 /* 2. Récupérer tous les li */
-
+let liste = document.getElementsByName('li')
 
 /* 3. Cibler le 4e li */
-
+document.querySelector('li:nth-child(0n+4)');
 
 /* 4. Compter le nombre de li dans la page */
-
+document.getElementsByTagName('li').length;
 
 /* 5. Cibler le premier li pair */
-
+document.querySelector('li:nth-child(0n+2)');
 
 /* 6. Récupérer tous les li de classe impair */
-
+document.getElementsByClassName('impair');
 
 /* a) afficher ce qu'on obtient */
-
+console.log(document.getElementsByClassName('impair'));
 
 /* b) afficher le 2e li de classe impair */
-
+console.log(document.querySelector('li.impair:nth-child(2)'));
 
 /* c) afficher chacun des li impair */
-
+console.log(document.querySelectorAll('li:nth-child(2n+1)'))
 
 
 /* d) compter le nombre de li de classe impair dans la page */
-
+document.getElementsByClassName('impair').length;
 
 
 /* 7. Cibler le 4e li puis, à partir de là, cibler son frère juste avant lui */
-
+document.querySelector('li:nth-child(4)');
 
 
 /* 8. Cibler le 4e li puis, à partir de là, cibler le suivant */
