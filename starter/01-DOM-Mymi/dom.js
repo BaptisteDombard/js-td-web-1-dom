@@ -46,22 +46,22 @@ document.querySelector('li:nth-child(4)');
 
 
 /* 9. Cibler le parent du 4e li */
-
+document.querySelector('li:nth-child(4)').parentNode
 
 
 /* 10. Récupérer tous les enfants de l'ul */
-
+document.querySelector('ul').childNodes
 
 /* a) afficher ce qu'on obtient */
-
+console.log(document.querySelector('ul').childNodes);
 /* b) cibler le 1er enfant de l'ul */
-
+document.querySelector('ul:first-child');
 
 /* c) cibler le dernier enfant de l'ul */
-
+document.querySelector('ul:last-child');
 
 /* c) cibler le 4e enfant de l'ul */
-
+document.querySelector('ul:nth-child(4)');
 
 
 /* 11. Chaînage de méthodes - que retournent les expressions suivantes ? */
