@@ -112,14 +112,14 @@ document.querySelector("#li5").insertAdjacentHTML("afterend","<li></li>");
 	- afficher le texte "Bibliographie",
 	- pointer vers la page "biblio.html" et
 	- afficher au survol la boîte de dialogue avec le texte "consulter ma bibliographie"  */
-/*document.querySelector("#li4").insertAdjacentHTML("beforebegin","<li>Bibliographie</li>");
-document.querySelector("#nav:nth-child(4)").setAttribute("href","biblio.html");
-document.querySelector("#nav:nth-child(4)").setAttribute("title","consulter ma bibliographie");*/
 let biblio = document.createElement("li");
-biblio.textContent = "Bibliographie";
-biblio.href = "biblio.html";
+// biblio.textContent = "Bibliographie";
+// biblio.href = "biblio.html";
 biblio.title = "consulter ma bibliographie";
 document.querySelector("#nav").insertBefore(biblio,document.querySelector("#li4"));
+document.querySelector("ul:nth-child(4)").insertAdjacentHTML("beforeend","<a></a>");
+document.querySelector("ul:nth-child(4) a").href = "biblio.html";
+document.querySelector("ul:nth-child(4) a").textContent = "Bibliographie";
 
 
 
