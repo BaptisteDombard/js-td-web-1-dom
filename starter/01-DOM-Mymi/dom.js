@@ -42,7 +42,7 @@ document.querySelector('li:nth-child(4)');
 
 
 /* 8. Cibler le 4e li puis, à partir de là, cibler le suivant */
-
+document.querySelector('li:nth-child(4)').nextElementSibling;
 
 
 /* 9. Cibler le parent du 4e li */
@@ -69,10 +69,10 @@ document.querySelector('ul:nth-child(4)');
 // le a about.html
 
 /* b) document. getElementsByTagName("li")[2].childNodes[3].firstChild */
-
+//
 
 /* c) document. getElementsByTagName("li")[2].firstChild.firstChild */
-
+// le a about me
 
 
 /* 12. Afficher les propriétés (nom du nœud, type de nœud, valeur du nœud) d'un nœud
@@ -85,25 +85,25 @@ console.log((document.getElementById("nav").getElementsByTagName("a")[2].firstCh
 
 // text node;
 /* 13. Changer le texte "Photos" en "Visuals" */
-document.querySelector("#li4")
+document.querySelector("#li4 a").textContent = "Visuals";
 
 
 /* 14. Modifier les attributs d'un élément */
 /* a) Changer la valeur de l'attribut href du lien "Photos" en "photos.php" */
-
+document.querySelector("#li4 a").href = "photo.php";
 
 /* a) Lui ajouter un attribut title avec la valeur "voir mes photos" */
-
+document.querySelector("#li4 a").setAttribute("title","voir mes photo");
 
 /* 15. Supprimer le dernier li du menu
        (faites-le en utilisant la méthode querySelector pour cible l'ul
         et querySelectorAll pour cibler les li)
 */
-
+document.querySelector("#nav").removeChild(document.querySelectorAll("li")[5]);
 
 
 /* 16. Ajouter un li à la fin de la liste */
-
+document.querySelector("#li5").insertAdjacentHTML("afterend","<li></li>");
 
 
 
@@ -112,7 +112,14 @@ document.querySelector("#li4")
 	- afficher le texte "Bibliographie",
 	- pointer vers la page "biblio.html" et
 	- afficher au survol la boîte de dialogue avec le texte "consulter ma bibliographie"  */
-
+/*document.querySelector("#li4").insertAdjacentHTML("beforebegin","<li>Bibliographie</li>");
+document.querySelector("#nav:nth-child(4)").setAttribute("href","biblio.html");
+document.querySelector("#nav:nth-child(4)").setAttribute("title","consulter ma bibliographie");*/
+let biblio = document.createElement("li");
+biblio.textContent = "Bibliographie";
+biblio.href = "biblio.html";
+biblio.title = "consulter ma bibliographie";
+document.querySelector("#nav").insertBefore(biblio,document.querySelector("#li4"));
 
 
 
