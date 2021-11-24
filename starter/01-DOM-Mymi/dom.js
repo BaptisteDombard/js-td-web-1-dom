@@ -129,7 +129,8 @@ document.querySelector("#nav").insertBefore(biblio,document.querySelector("#li4"
 	  - changer son libellé en "Visuals" 
 	  - ajouter une boîte de dialogue au survol avec le texte "voir la galerie" 
 	  - changer la cible du lien en "visuals.html " */
-
+document.querySelector("#li4").title = "voir la galerie";
+document.querySelector("#li4 a").href = "visuals.html";
 
 
 
