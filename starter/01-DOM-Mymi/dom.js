@@ -66,7 +66,7 @@ document.querySelector('ul:nth-child(4)');
 
 /* 11. Chaînage de méthodes - que retournent les expressions suivantes ? */
 /* a) document.getElementById("nav"). getElementsByTagName("li")[3].firstChild */
-
+// le a about.html
 
 /* b) document. getElementsByTagName("li")[2].childNodes[3].firstChild */
 
@@ -78,14 +78,14 @@ document.querySelector('ul:nth-child(4)');
 /* 12. Afficher les propriétés (nom du nœud, type de nœud, valeur du nœud) d'un nœud
 */
 /* a) du noeud document.getElementById("nav").getElementsByTagName("li")[3].firstChild */
-
-
+console.log((document.getElementById("nav").getElementsByTagName("li")[3].firstChild).nodeType);
+// element node;
 /* b) du noeud document.getElementById("nav").getElementsByTagName("a")[2].firstChild */
+console.log((document.getElementById("nav").getElementsByTagName("a")[2].firstChild).nodeType);
 
-
-
+// text node;
 /* 13. Changer le texte "Photos" en "Visuals" */
-
+document.querySelector("#li4")
 
 
 /* 14. Modifier les attributs d'un élément */
